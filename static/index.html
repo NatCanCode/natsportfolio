@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <link rel="shorcut icon" type="image" href="../images/pinwheelD8AC9C.svg">
+
+    <title>Nat's portfolio</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <nav class="nav flex">
+            <div class="hamburger">
+                <div class="line line1 toggle"></div>
+                <div class="line line2 toggle"></div>
+                <div class="line line3 toggle"></div>
+            </div>
+            <div class="nat flex">
+                <a href="#about"><img class="infinite-spin" src="../images/pinwheel0A0402.svg" alt="white-pinwheel-vector-origami-logo"></a>
+                <div class="dark-light-switch">
+                    <input type="checkbox" id="toggle" class="checkbox">
+                    <label class="flick flex" for="toggle">
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            <ul class="nav-links flex">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="french.html">FR</a></li>
+            </ul>
+        </nav>
+
+        <section id="landing" class="container-landing flex">
+            <h1 class="flipX">
+                <ul class="landing fluid">
+                    <li class="fluid1">Junior <span class="grow">Front-End</span> Web Developer.</li>
+                    <li class="fluid2">Working in <span class="grow">UX/UI design</span> and digital communications.</li>
+                    <li class="fluid3">English/French <span class="grow">fluent</span>.</li>
+                    <li class="fluid4">Based in <span class="grow">Paris</span>.</li>
+                </ul> 
+            </h1>
+            <div>
+                <a href="#about"><p class="scroll flex">Scroll to continue</p></a>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- ABOUT -->
+        <section id="about">
+            <h3 id="greetings" class="abouttitle grow-small flex">Hey,  I'm Nathalie!</h3>
+            <ul id="carousel" class="cartoonpic flex" >
+                <li class="slider" style="opacity:1;"><img src="../images/pinklips.jpg" alt="cartoon-pic-of-nat-with-blond-hair-and-pink-lips"></li>
+                <li class="slider"><img src="../images/redlips.jpg" alt="cartoon-pic-of-nat-with-blond-hair-and-red-lips">
+                </li>
+                <li class="slider"><img src="../images/redgreyhair.jpg" alt="cartoon-pic-of-nat-with-grey-and-red-hair-and-pink-lips">
+                </li>
+            </ul>
+            <article class="aboutme flex">
+                <ul>
+                    <li class="flex">I'm a junior Web Developer living in Paris, previously working in international communications, and always up for learning new things.</li>
+                    <li class="flex">At the crossroad between UX/UI design and Front-End Development, I aim to create neat, minimalist and responsive websites. I strive for simplicity, clarity, and purity in my work.</li>
+                    <li class="flex">The technologies I usually use are HTML5, CSS3, JavaScript, Python and React, and I prototype with Figma.</li>
+                    <li class="flex">I’m a coffee AND tea addict, inspired by my peers and colleagues, my little one, my partner, my grumpy cat, anything and everything photography related, and MedTech innovation.</li>
+                    <li class="flex">I take pride in building and developing projects that can help make the world a better place.</li>
+                    <li class="flex work">
+                        <span class="text-wrapper">
+                            <span class="letters">
+                            Interested in working together?
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+                <button class="button flex"><a href="mailto:nathalie.piat1@gmail.com">Drop a note</a></button>
+            </article>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="softskills">
+            <h3 class="skillstitle flex">Soft skills</h3>
+            <img class="icon1 flex" src="../images/eye-for-detail.svg"></img>
+            <img class="icon2 flex" src="../images/fast-learner.svg"></img>
+            <img class="icon3 flex" src="../images/creative.svg"></img>
+            <img class="icon4 flex" src="../images/problem-solver.svg"></img>
+            <li class="skill1 flex">Eye for details</li>
+            <li class="skill2 flex">Fast learner</li>
+            <li class="skill3 flex">Creative spirit</li>
+            <li class="skill4 flex">Problem solver</li>
+            <button class="flex skillsbutton"><a href="https://www.linkedin.com/in/nathaliepiat/">Read more</a></button>
+        </section>
+
+        <section id="loop">
+            <div class="loop-line">
+                <h4 class="loop-word">#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush</div>
+                </h4>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <h3 class="projectstitle flex">Selected projects</h3>
+            <img class="weatherpic flex" src="../images/worldweather.png" alt="">
+            <!-- <video autoplay muted loop id="myvideo">
+                <source src="..images/weatherapp.mov" type="video/mp4">
+            </video> -->
+            <article class="weathertext flex">
+                <h5>Weather app</h5>
+                <p>Getting the weather in real time absolutely everywhere in the  world! One of my first proper interactive web pages - coded in HTML, CSS, JavaScript, and using two APIs.<br>Want to try it? Here's the <a href="https://natcancode.github.io/worldweather/static/index.html">link</a>!</p>
+            </article>
+            <img class="medtechpic" src="../images/medtech-homepage.png" alt="">
+            <article class="medtechtext flex">
+                <h5>Simplon #Hackeuses Certification Award</h5>
+                <p>My very first website project - English and French pages - presented to a jury of professional web developers. Certification subject: "Women and tech - I code therefore I am".<br>#Hackeuses jury prize awarded for the website design and subject originality.</p>
+            </article>
+            <img class="emojisearchpic flex" src="../images/emoji-search.png" alt="">
+            <article class="emojisearchtext flex">
+                <h5>Emoji Search</h5>
+                <p>Tech used. Purpose. Challenges.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam repudiandae facere itaque, voluptates porro non earum. Excepturi.<br>Want to try it? Here's the <a href="https://natcancode.github.io/worldweather/static/index.html">link</a>!</p>
+            </article>
+            <img class="emojigardenpic" src="../images/emoji-garden.png" alt="">
+            <article class="emojigardentext flex">
+                <h5>Emoji Garden</h5>
+                <p>Tech used. Purpose. Challenges.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam repudiandae facere itaque, voluptates porro non earum. Excepturi.</p>
+            </article>
+            <img class="picsharepic" src="../images/picshare-homepage.png" alt="">
+            <article class="picsharetext flex">
+                <h5>PicShare</h5>
+                <p>Team project at Matrice building a website to share images using an SQLite database. Users being able to upload their own images and other users being able to view and comment the images. </p>
+            </article>
+            <img class="swipepic" src="../images/photoswipe.png" alt="">
+            <!-- <iframe class="swipepic" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FP02EZ2EAEK2dZGPIht44au%2FPhotoSwipe-UX%3Fpage-id%3D0%253A1%26node-id%3D14%253A170%26viewport%3D241%252C48%252C0.22%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A113" allowfullscreen></iframe> -->
+            <article class="swipetext flex">
+                <h5>PhotoSwipe</h5>
+                <p>Teamwork on Design Thinking, persona, UX/UI design, and prototyping with Figma.</p>
+            </article>
+            <img class="flourshowerpic" src="../images/flourshower.png" alt="">
+            <article class="flourshowertext flex">
+                <h5>Flour Shower</h5>
+                <p>Fully responsive HTML/CSS pages built from mockups. The job was not to re-design a 5-page bakery website but to faithfully implement the provided visuals with a clean code. This is where I got hooked on grids, and titles that overlap blocks.<br>Bonus points awarded for the embedded GoogleMaps information on the contact page! <br>You can navigate through <a href="https://natcancode.github.io/flourshowerproject/flourshower3.html">the project pages</a> clicking on the buttons and the About, Contact, Unavoidable, Amazing links on the header and footer.</p>
+            </article>
+            <img class="imagegallerypic" src="../images/image-gallery-animation.png" alt="">
+            <article class="imagegallerytext flex">
+                <h5>Image gallery animation</h5>
+                <p>Personal project on image gallery animation with JavaScrip. Fluid image  pop-up with a preview caption. The images are clickable - they expand when clicked and a caption is displayed. <br>Here is the <a href="https://natcancode.github.io/image-gallery-animation/">link</a>!</p>
+            </article>
+            <img class="eshoppic" src="../images/eshop-terra.png" alt="">
+            <article class="eshoptext flex">
+                <h5>Terra E-shop</h5>
+                <p>E-shop website project built at Simplon. Special focus made on UX/UI design from the landing page to the basket and payment pages. <br>Mobile first approach. Website link <a href="https://natcancode.github.io/EcommerceTerra/">here</a>.</p>
+            </article>
+            <img class="uidesignpic" src="../images/UI-design.png" alt="">
+            <article class="uidesigntext flex">
+                <h5>First UI design</h5>
+                <p>Very first project on Figma. The goal was to rethink the design of a website full of UI mistakes. <br>I had a blast discovering this new tool!</p>
+            </article>
+
+            <a href="#projects"><p class="up flex">Up</p></a>
+        </section>
+
+        <!-- PHOTOGRAPHY GALLERY -->
+        <!-- <section id="photo">
+            <h4 class="phototitle flex">Selected pictures</h4>
+        </section>    -->
+
+        <section id="countdown">
+            <h3  class="countdowntext grow-small">My Tech Manager <br>training at <a href="https://matrice.io/ecole/tech-front" class="grow-small">Matrice</a><br>ends soon!</h3>
+            <div class="countdown flex"
+                data-countdown="2022-02-25T00:00:00+02:00"
+                data-countdown-option-leadingzero="true"
+                data-countdown-option-setcssproperties="true"
+                data-countdown-option-separatedigits="true"
+                data-countdown-option-nextdigits="true">
+                <div class="days">
+                    <span class="amount"></span>
+                    <span class="label"></span>
+                </div>
+                <div class="hours">
+                    <span class="amount"></span>
+                    <span class="label"></span>
+                </div>
+                <div class="minutes">
+                    <span class="amount"></span>
+                    <span class="label"></span>
+                </div>
+                <div class="seconds">
+                    <span class="amount"></span>
+                    <span class="label"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footertitle flex">
+            <h3>Let's create something beautiful!</h3>
+            <a href="mailto:nathalie.piat1@gmail.com"><h3 class="touch">Get in touch.</h3></a>    
+        </div>
+        <a href="#header"><img class="logo rotation" src="../images/pinwheelFFFFF4.svg" alt="white-pinwheel-vector-logo"></a>
+        <p class="copyright flex">© Nathalie Piat, 2021. Made with ♡</p>
+        <div class="socialmedia flex">
+            <a href="https://www.linkedin.com/in/nathaliepiat/"><img class="linkedin" src="../images/linkedinFFFFF4.svg" alt="linkedin-icon"></a>
+            <a href="https://www.twitter.com/nathaliepiat/ "><img class="twitter" src="../images/twitterFFFFF4.svg" alt="twitter-icon"></a>
+            <a href="https://www.instagram.com/1derfultype/"><img class="instagram" src="../images/instagramFFFFF4.svg" alt="instagram-icon"></a>
+            <a href="https://www.figma.com/@natcancode"><img class="figma" src="../images/figmaFFFFF4.svg" alt="figma-icon"></a>
+            <a href="https://gitlab.matrice.io/npiat "><img class="gitlab" src="../images/gitlabFFFFF4.svg" alt="gitlab-icon"></a>
+            <a href="https://github.com/NatCanCode"><img class="github" src="../images/githubFFFFF4.svg" alt="github-icon"></a>
+            <a href="mailto:nathalie.piat1@gmail.com"><img class="email" src="../images/paperplaneFFFFF4.svg" alt="email-paper-plane-icon"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../script/app.js"></script>
+</body>
+</html>
