@@ -38,6 +38,7 @@ body{
     font-size: clamp(13px, 10vw, 20px);
     line-height: 1.5;
     /* convention du web : séparer paragraphes de 1.3 */
+    cursor: none;
 }
 body.dark{
     background-color: var(--darkbackground);
@@ -50,7 +51,6 @@ img{
     /* garder ratio d'une image  */
     object-fit: cover;
     display: block;
-    /* border-radius: 5px; */
     max-width: 100%;  /* si elle n'a plus la place, elle va se reduire */
 }
 div{
@@ -128,6 +128,47 @@ li{
     list-style: none;
 }
 
+/* Cursor couloured animation */
+.cursor{
+    z-index: 999;
+    position: fixed;
+    /* background: #2696E8; */
+    background: var(--countdown);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    /* box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,            
+                0 0 100px #2696E8; */
+    box-shadow: 0 0 20px var(--countdown),
+                0 0 60px var(--countdown),            
+                0 0 100px var(--countdown);            
+    animation: colors 5s infinite;  
+    transform: translate(-50%, -50%);
+    display: none;
+    /* backdrop-filter: grayscale(); */
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.cursor:before{
+    content: '';
+    position: absolute;
+    /* background: #2696E8; */
+    background: var(--countdown);
+    width: 50px;
+    height: 50px;
+    opacity: .2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
 /* HEADER */
 /* #myvideo {
     position: fixed;
@@ -144,8 +185,7 @@ nav{
     max-width: 100vw;
     min-height: 10vh;
     justify-content: space-between;
-    /* background-color: #f4eeed; */
-    background-color: #efd9d1;
+    background-color: var(--cream);
 }
 .dark nav{
     background-color: var(--darknav);
@@ -196,7 +236,6 @@ nav{
     height: 2.5rem;
     width: 5rem;
     transition: .5rem ease;
-    cursor: pointer;
 }
 .flick .ball{
     position: absolute;
@@ -422,7 +461,6 @@ nav a:hover{
     grid-gap: 5%;
     min-height: 100vh;
     width: 100vw;
-    /* background-color: #f4eeed; */
     background-color: #FFFFF4;
     padding: 5% 5% 5% 5%;
     /* padding: top right bottom left*/
