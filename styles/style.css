@@ -431,7 +431,6 @@ nav a:hover{
     grid-gap: 5%;
     width: 100vw;
     background-color: var(--creamdarker);
-    /* background-color: #f4eeed; */
     padding: 5% 5% 12% 5%;
     /* padding: top right bottom left*/
 	grid-template-columns: 1fr 2fr;
@@ -486,15 +485,6 @@ nav a:hover{
 }
 
 /* Eight */
-/* .container-eight{
-	position: absolute;
-	bottom: 0;
-	width: 50vw;
-	height: 100vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-} */
 .eight{
 	position: absolute;
     width: 30%;
@@ -508,7 +498,7 @@ nav a:hover{
     opacity: 10%;
 }
 
-/** || Carousel Styles */
+/* Carousel */
 #carousel{
     padding: 0;
     margin: 0;
@@ -528,14 +518,14 @@ nav a:hover{
 /* SKILLS */
 #skills{
     display: grid;
-    grid-gap: 5%;
+    grid-gap: 3%;
     min-height: 100vh;
     width: 100vw;
     background-color: var(--cream);
     padding: 5% 5% 5% 5%;
     /* padding: top right bottom left*/
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: .3fr .3fr .3fr .3fr .3fr .4fr;
+	grid-template-rows: .3fr .3fr .3fr .3fr .3fr .7fr;
     grid-template-areas:
     "softskillstitle softskillstitle hardskillstitle hardskillstitle" 
     "icon1 icon2 hardskillsbars hardskillsbars"   
@@ -546,7 +536,6 @@ nav a:hover{
 }
 .dark #skills{
     background-color: var(--darkbackground);
-    /* color: var(--cream); */
 }
 .softskillstitle{
     grid-area: softskillstitle;
@@ -560,67 +549,59 @@ nav a:hover{
 }
 .icon1{
     grid-area: icon1;
-    height: 10%;
-    width: 10%;
-    /* background-color: #d8ac9c; */
-    background-color: #efd9d1;
-    border-radius: 50%;
-    border: 3px solid blue;
+    width: 50%;
+    margin-left: 25%;
+    transition: transform 330ms ease-in-out;
+}
+.icon1:hover{
+    transform: scale(1.1);
 }
 .icon2{
     grid-area: icon2;
-    height: 10%;
-    width: 10%;
-    /* background-color: #d8ac9c; */
-    background-color: #efd9d1;
-    border-radius: 50%;
-    border: 3px solid blue;
+    width: 50%;
+    margin-left: 25%;
+    transition: transform 330ms ease-in-out;
+}
+.icon2:hover{
+    transform: scale(1.1);
 }
 .icon3{
     grid-area: icon3;
-    height: 10%;
-    width: 10%;
-    /* background-color: #d8ac9c; */
-    background-color: #efd9d1;
-    border-radius: 50%;
-    border: 3px solid blue;
+    width: 50%;
+    margin-left: 25%;
+    transition: transform 330ms ease-in-out;
+}
+.icon3:hover{
+    transform: scale(1.1);
 }
 .icon4{
     grid-area: icon4;
-    height: 10%;
-    width: 10%;
-    /* background-color: #d8ac9c; */
-    background-color: #efd9d1;
-    border-radius: 50%;
-    border: 3px solid blue;
+    width: 50%;
+    margin-left: 25%;
+    transition: transform 330ms ease-in-out;
+}
+.icon4:hover{
+    transform: scale(1.1);
 }
 .skill1{
     grid-area: skill1;
-    /* border: 3px solid red; */
     justify-content: center;
     text-align: center;
-    border: 3px solid pink;
 }
 .skill2{
     grid-area: skill2;
-    /* border: 3px solid red; */
     justify-content: center;
     text-align: center;
-    border: 3px solid pink;
 }
 .skill3{
     grid-area: skill3;
-    /* border: 3px solid red; */
     justify-content: center;
     text-align: center;
-    border: 3px solid pink;
 }
 .skill4{
     grid-area: skill4;
-    /* border: 3px solid red; */
     justify-content: center;
     text-align: center;
-    border: 3px solid pink;
 }
 .hardskillsbars{
     grid-area: hardskillsbars;
@@ -662,12 +643,12 @@ nav a:hover{
 .inside{
     border-radius: 30px;
     height: 20px;
-    background: linear-gradient(#DDC2AE, #CDA382, #0A0402);
+    background: linear-gradient(#DDC2AE, #DDC2AE, #0A0402);
     animation: slide1 2s ease-in-out;
 }
-.dark .inside{
-    background: linear-gradient(#DDC2AE, #CDA382, #FFFFF4);
-}
+/* .dark .inside{
+    background: linear-gradient(#CDA382, #DDC2AE, #FFFFF4);
+} */
 .inside1{
     width: 100%;
 }
@@ -1331,6 +1312,9 @@ footer{
         background-color: #0A0402;
         margin: 5px;
     }
+    .dark .line{
+        background-color: var(--cream);
+    }
     nav{
         position: relative;
     }
@@ -1396,7 +1380,7 @@ footer{
     .nav-links li:nth-child(4){
         transition: all .5s ease .8s;
     }
-    /* one li missing here !!! */
+    /* 2 li missing here though the ones that actually works!!! */
     li.fade{
         opacity: 1;
     }
@@ -1452,7 +1436,7 @@ footer{
         padding: 10% 5% 13% 5%;
         /* padding: top right bottom left*/
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .3fr .6fr .1fr .6fr .1fr .1fr .7fr .2fr;
+        grid-template-rows: .3fr .3fr .1fr .3fr .1fr .6fr .7fr .2fr;
         grid-template-areas:
         "softskillstitle softskillstitle" 
         "icon1 icon2"   
