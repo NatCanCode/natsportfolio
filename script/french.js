@@ -27,7 +27,8 @@ function salutations() {
     // careful with security issues using innerHTML (user input only?)
     document.getElementById("salutations").innerHTML = salutations;
 }
-salutations()
+salutations();
+
 
 
 // dark/light switch
@@ -66,7 +67,7 @@ setInterval(function () {
   slides[counter].style.opacity = 0; // Hide the previous image
   counter = (counter + 1) % slides.length; // Increment counter
   slides[counter].style.opacity = 1; // Show the next image
-}, 3000) // setInterval
+}, 3000); // setInterval
 
 
 // countdown
@@ -343,3 +344,7 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mouseout', () => {
     cursor.style.display = 'none'  
 })
+
+
+// console.log(++[[]][+[]]+[+[]]);
+// outputs 10

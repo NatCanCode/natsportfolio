@@ -1,3 +1,20 @@
+// scroll reveal
+// ScrollReveal().reveal('.nav-links')
+const sr = ScrollReveal({
+    duration: 1000,
+    reset: true,
+    mobile: true
+})
+sr.reveal('h1', {
+	// interval: 16, ???
+})
+sr.reveal('.digits', {
+    delay: 500
+})
+sr.reveal('.digit', {
+    delay: 1000
+}, 200) // delai en cascade en millisecondes
+
 // burger menu
 const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelector('.nav-links')
@@ -68,7 +85,7 @@ setInterval(function () {
   slides[counter].style.opacity = 0; // Hide the previous image
   counter = (counter + 1) % slides.length; // Increment counter
   slides[counter].style.opacity = 1; // Show the next image
-}, 3000) // setInterval
+}, 3000); // setInterval
 
 
 // countdown

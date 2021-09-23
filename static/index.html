@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
+    <!-- <script src="/lib/scrollreveal.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <link rel="shorcut icon" type="image" href="../images/pinwheelD8AC9C.svg">
-
     <title>Nat's portfolio</title>
 </head>
 <body>
+    <div class="cursor"></div>
     <!-- HEADER -->
     <header id="header">
         <nav class="nav flex">
@@ -36,6 +38,7 @@
             <ul class="nav-links flex">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#style">Style guide</a></li>
                 <li><a href="#countdown">Countdown</a></li>
                 <li><a href="#footer">Contact</a></li>
                 <li><a href="french.html">FR</a></li>
@@ -45,15 +48,63 @@
         <section id="landing" class="container-landing flex">
             <h1 class="flipX">
                 <ul class="landing fluid">
-                    <li class="fluid1">Junior <span class="grow">Front-End</span> Web Developer.</li>
+                    <li class="fluid1">Front-End <span class="grow">Web Developer</span>.</li>
                     <li class="fluid2">Working in <span class="grow">UX/UI design</span> and digital communications.</li>
                     <li class="fluid3">English/French <span class="grow">fluent</span>.</li>
                     <li class="fluid4">Based in <span class="grow">Paris</span>.</li>
                 </ul> 
             </h1>
-            <div>
+            <!-- <div class="container"> -->
+				<div class="container-digits flex">
+					<!-- <div class="container-img-wrap">
+						<div class="container-img"></div>
+					</div> -->
+					<div class="item item1 flex">1</div>
+                    <div class="item item2 flex">2</div>
+                    <div class="item item3 flex">3</div>
+                    <div class="item item4 flex">4</div>
+                    <div class="item item5 flex">5</div>
+                    <div class="item item6 flex">6</div>
+                    <div class="item item7 flex">7</div>
+					<!-- <div class="item">
+						<a href="#" class="container-item" data-img="image-two.jpg">
+							<h6>2</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-three.jpg">
+							<h6>3</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-four.jpg">
+							<h6>4</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-five.jpg">
+							<h6>5</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-six.jpg">
+							<h6>6</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-seven.jpg">
+							<h6>7</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-eight.jpg">
+							<h6>8</h6>
+						</a>
+					</div> -->
+				<!-- </div> -->
+            <!-- <div>
                 <a href="#about"><p class="scroll flex">Scroll to continue</p></a>
-            </div>
+            </div> -->
         </section>
     </header>
 
@@ -69,8 +120,8 @@
                 <li class="slider"><img src="../images/redgreyhair.jpg" alt="cartoon-pic-of-nat-with-grey-and-red-hair-and-pink-lips">
                 </li>
             </ul>
-            <article class="aboutme flex">
-                <ul>
+            <article class="aboutme flex container-eight">
+                <ul class="">
                     <li class="flex">I'm a junior Web Developer living in Paris, previously working in international communications, and always up for learning new things.</li>
                     <li class="flex">At the crossroad between UX/UI design and Front-End Development, I aim to create neat, minimalist and responsive websites. I strive for simplicity, clarity, and purity in my work.</li>
                     <li class="flex">The technologies I usually use are HTML5, CSS3, JavaScript, Python and React, and I prototype with Figma.</li>
@@ -83,14 +134,17 @@
                             </span>
                         </span>
                     </li>
+                    <div class="container-eight flex">
+                        <div class="eight flex">8</div>
+                    </div>
                 </ul>
                 <button class="button flex"><a href="mailto:nathalie.piat1@gmail.com">Drop a note</a></button>
             </article>
         </section>
 
         <!-- SKILLS -->
-        <section id="softskills">
-            <h3 class="skillstitle flex">Soft skills</h3>
+        <section id="skills">
+            <h3 class="softskillstitle flex">Soft skills</h3>
             <img class="icon1 flex" src="../images/eye-for-detail.svg"></img>
             <img class="icon2 flex" src="../images/fast-learner.svg"></img>
             <img class="icon3 flex" src="../images/creative.svg"></img>
@@ -99,13 +153,60 @@
             <li class="skill2 flex">Fast learner</li>
             <li class="skill3 flex">Creative spirit</li>
             <li class="skill4 flex">Problem solver</li>
+            
+            <h3 class="hardskillstitle flex">Hard skills</h3>
+            <div id="hardskills" class="hardskillsbars flex">
+                <div class="align flex">
+                    <p class="hardtitle">HTML5</p>
+                    <div class="bar">
+                        <div class="inside inside1"></div>
+                    </div>
+                    <h5>90%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">CSS3</p>
+                    <div class="bar">
+                        <div class="inside inside2"></div>
+                    </div>
+                    <h5>90%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle hardtitleJS">JavaScript</p>
+                    <div class="bar">
+                        <div class="inside inside3"></div>
+                    </div>
+                    <h5>60%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">Python</p>
+                    <div class="bar">
+                        <div class="inside inside4"></div>
+                    </div>
+                    <h5>70%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">React</p>
+                    <div class="bar">
+                        <div class="inside inside5"></div>
+                    </div>
+                    <h5>50%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">Figma</p>
+                    <div class="bar">
+                        <div class="inside inside6"></div>
+                    </div>
+                    <h5>85%</h5>
+                </div>
+            </div>
+
             <button class="flex skillsbutton"><a href="https://www.linkedin.com/in/nathaliepiat/">Read more</a></button>
         </section>
-
         <section id="loop">
             <div class="loop-line">
-                <h4 class="loop-word">#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush</div>
+                <h4 class="loop-word">#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush
                 </h4>
+            </div>
         </section>
 
         <!-- PROJECTS -->
@@ -123,18 +224,6 @@
             <article class="medtechtext flex">
                 <h5>Simplon #Hackeuses Certification Award</h5>
                 <p>My very first website project - English and French pages - presented to a jury of professional web developers. Certification subject: "Women and tech - I code therefore I am".<br>#Hackeuses jury prize awarded for the website design and subject originality.</p>
-            </article>
-            <img class="emojisearchpic flex" src="../images/emoji-search.png" alt="">
-            <article class="emojisearchtext flex">
-                <h5>Emoji Search</h5>
-                <p>Tech used. Purpose. Challenges.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam repudiandae facere itaque, voluptates porro non earum. Excepturi.<br>Want to try it? Here's the <a href="https://natcancode.github.io/worldweather/static/index.html">link</a>!</p>
-            </article>
-            <img class="emojigardenpic" src="../images/emoji-garden.png" alt="">
-            <article class="emojigardentext flex">
-                <h5>Emoji Garden</h5>
-                <p>Tech used. Purpose. Challenges.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam repudiandae facere itaque, voluptates porro non earum. Excepturi.</p>
             </article>
             <img class="picsharepic" src="../images/picshare-homepage.png" alt="">
             <article class="picsharetext flex">
@@ -223,6 +312,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../script/app.js"></script>
