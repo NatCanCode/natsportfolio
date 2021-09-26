@@ -947,7 +947,7 @@ nav a:hover{
     justify-content: flex-start;
     align-items: flex-start;
     letter-spacing: -0.5em;
-    margin-top: -45%;
+    margin-top: -50%;
 }
 .cormorant{
     grid-area: cormorant;
@@ -1596,8 +1596,8 @@ footer{
 
     /* STYLE */
     #style{
-        padding-top: 10%;
-        padding-bottom: 15%;
+        padding-top: 15%;
+        padding-bottom: 25%;
         grid-template-columns: 2fr .5fr .5fr;
         grid-template-rows: .15fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
