@@ -448,16 +448,8 @@ nav a:hover{
     text-transform: uppercase;
     align-items: center;
 }
-.work{
-    letter-spacing: .09em;
-}
-.work .text-wrapper{
-    overflow: hidden;
-    display: inline-block;
-}
 .work .letter{
     display: inline-block;
-    transform-origin: 0 0;
 }
 .grow-small{
     flex-grow: 1;
@@ -465,7 +457,7 @@ nav a:hover{
     font-size: clamp(28px, 7vw, 36px);
 }
 .grow-small:hover{
-    flex-grow: 2;
+    flex-grow: 2.5;
     /* cursor: pointer; */
     font-size: clamp(42px, 7vw, 54px);
 }
@@ -554,7 +546,7 @@ nav a:hover{
     transition: transform 330ms ease-in-out;
 }
 .icon1:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .icon2{
     grid-area: icon2;
@@ -563,7 +555,7 @@ nav a:hover{
     transition: transform 330ms ease-in-out;
 }
 .icon2:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .icon3{
     grid-area: icon3;
@@ -572,7 +564,7 @@ nav a:hover{
     transition: transform 330ms ease-in-out;
 }
 .icon3:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .icon4{
     grid-area: icon4;
@@ -581,7 +573,7 @@ nav a:hover{
     transition: transform 330ms ease-in-out;
 }
 .icon4:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .skill1{
     grid-area: skill1;
@@ -740,29 +732,25 @@ nav a:hover{
     color: var(--countdownlight);
 }
 #projects{
-    /* background-color: #999b84; */
-    /* background-color: #efd9d1; */
     background-color: var(--cream);
-    /* background-color: #f2ebe8; */
     display: grid;
     grid-gap: 3%;
     width: 100vw;
     height: 700vh;
     padding: 5% 5% 80% 5%;
-    /* margin-bottom: 80%; */
     /* padding: top right bottom left*/
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: .15fr .2fr .1fr .2fr .1fr .2fr .1fr;
+	grid-template-rows: .15fr .2fr .1fr .2fr .1fr .2fr .1fr .2fr .1fr;
     grid-template-areas:
     "projectstitle projectstitle"
     "weatherpic medtechpic"
     "weathertext medtechtext"
     "picsharepic swipepic"
     "picsharetext swipetext"
-    "flourshowerpic imagegallerypic"
-    "flourshowertext imagegallerytext"
-    "eshoppic uidesignpic"
-    "eshoptext uidesigntext";
+    "flourshowerpic eshoppic"
+    "flourshowertext eshoptext"
+    "imagegallerypic jsanimationspic"
+    "imagegallerytext jsanimationstext";
 }
 .dark #projects{
     background-color: var(--darkprojects);
@@ -797,7 +785,6 @@ nav a:hover{
 .medtechpic{
     grid-area: medtechpic;
     border-radius: 3px;
-    /* background-color: #999b84; */
     justify-self: center;
     border-radius: 5px;
     height: 90vh;
@@ -812,12 +799,10 @@ nav a:hover{
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
     /* padding: top right bottom left*/
-    /* border: 3px solid green; */
 }
 .picsharepic{
     grid-area: picsharepic;
     border-radius: 3px;
-    /* background-color: #999b84; */
     justify-self: center;
     border-radius: 5px;
     height: 90vh;
@@ -831,8 +816,6 @@ nav a:hover{
     flex-direction: column;
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
-    /* padding: top right bottom left*/
-    /* border: 3px solid green; */
 }
 /* iframe{
     width: 80%;
@@ -840,7 +823,6 @@ nav a:hover{
 .swipepic{
     grid-area: swipepic;
     border-radius: 3px;
-    /* background-color: #999b84; */
     justify-self: center;
     border-radius: 5px;
     height: 90vh;
@@ -855,14 +837,10 @@ nav a:hover{
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
     /* padding: top right bottom left*/
-    /* border: 3px solid green; */
 }
 .flourshowerpic{
     grid-area: flourshowerpic;
     border-radius: 3px;
-    /* background-color: #d8ac9c; */
-    /* min-height: 100%;
-    min-width: 50%; */
     justify-self: center;
     border-radius: 5px;
     height: 90vh;
@@ -876,37 +854,10 @@ nav a:hover{
     flex-direction: column;
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
-    /* padding: top right bottom left*/
-    /* border: 3px solid pink; */
-}
-.imagegallerypic{
-    grid-area: imagegallerypic;
-    border-radius: 3px;
-    /* background-color: #d8ac9c; */
-    /* min-height: 100%;
-    min-width: 50%; */
-    justify-self: center;
-    border-radius: 5px;
-    height: 90vh;
-    transition: transform 330ms ease-in-out;
-}
-.imagegallerypic:hover{
-    transform: scale(1.1);
-}
-.imagegallerytext{
-    grid-area: imagegallerytext;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0% 7% 5% 7%;
-    /* padding: top right bottom left*/
-    /* border: 3px solid pink; */
 }
 .eshoppic{
     grid-area: eshoppic;
     border-radius: 3px;
-    /* background-color: #f4eeed; */
-    /* min-height: 100%;
-    min-width: 50%; */
     justify-self: center;
     border-radius: 5px;
     height: 90vh;
@@ -921,29 +872,41 @@ nav a:hover{
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
     /* padding: top right bottom left*/
-    /* border: 3px solid purple; */
 }
-.uidesignpic{
-    grid-area: uidesignpic;
+.imagegallerypic{
+    grid-area: imagegallerypic;
     border-radius: 3px;
-    /* background-color: #f4eeed; */
-    /* min-height: 100%;
-    min-width: 50%; */
     justify-self: center;
     border-radius: 5px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
-.uidesignpic:hover{
+.imagegallerypic:hover{
     transform: scale(1.1);
 }
-.uidesigntext{
-    grid-area: uidesigntext;
+.imagegallerytext{
+    grid-area: imagegallerytext;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0% 7% 5% 7%;
+}
+.jsanimationspic{
+    grid-area: jsanimationspic;
+    border-radius: 3px;
+    justify-self: center;
+    border-radius: 5px;
+    height: 90vh;
+    transition: transform 330ms ease-in-out;
+}
+.jsanimationspic:hover{
+    transform: scale(1.1);
+}
+.jsanimationstext{
+    grid-area: jsanimationstext;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
     /* padding: top right bottom left*/
-    /* border: 3px solid purple; */
 }
 .up{
     text-transform: none;
@@ -1099,14 +1062,14 @@ footer{
     "footertitle footertitle footertitle footertitle logo"
     "socialmedia socialmedia . copyright copyright ";
 }
-.touch{
-    margin-top: -5%;
-}
 .footertitle{
     grid-area: footertitle;
     flex-direction: column;
     justify-content: center;
     /* overflow: hidden; */
+}
+.touch{
+    margin-top: -5%;
 }
 .touch .letter{
     display: inline-block;
@@ -1487,12 +1450,12 @@ footer{
         "swipepic"
         "flourshowertext" 
         "flourshowerpic"
-        "imagegallerytext"
-        "imagegallerypic"
         "eshoptext"
         "eshoppic"
-        "uidesigntext"
-        "uidesignpic";
+        "imagegallerytext"
+        "imagegallerypic"
+        "jsanimationstext"
+        "jsanimationspic";
     }
      .projectstitle{
         justify-content: center;
@@ -1523,7 +1486,7 @@ footer{
     .eshoppic{
         margin-bottom: 10%;
     }
-    .uidesignpic{
+    .jsanimationspic{
         margin-bottom: 10%;
     }
     /* .up{
