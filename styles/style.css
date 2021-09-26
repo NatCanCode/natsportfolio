@@ -135,6 +135,10 @@ h4{
 h5{
     font-size: clamp(18px, 7vw, 25px);
 }
+h6{
+    font-size: clamp(500px, 50vw, 1000px); 
+    font-weight: 300;
+}
 a{
     font-size: clamp(13px, 7vw, 20px);
     text-decoration: none;
@@ -391,17 +395,6 @@ nav a:hover{
     /* cursor: pointer; */
     font-size: clamp(64px, 7vw, 120px);
 }
-/* .scroll{
-    text-transform: none;
-    font-size: clamp(11px, 10vw, 16px);
-    justify-content: center;
-    align-items: center;
-    padding-top: 60%;
-    padding-bottom: 2%;
-}
-.dark .scroll{
-    color: var(--cream);
-} */
 
 /* Numbers */
 .container-digits{
@@ -736,7 +729,7 @@ nav a:hover{
     display: grid;
     grid-gap: 3%;
     width: 100vw;
-    height: 700vh;
+    height: fit-content;
     padding: 5% 5% 80% 5%;
     /* padding: top right bottom left*/
 	grid-template-columns: repeat(2, 1fr);
@@ -913,7 +906,7 @@ nav a:hover{
     color: #0A0402;
     font-size: clamp(11px, 10vw, 16px);
     justify-content: flex-end;
-    /* padding-bottom: 10%; */
+    padding-bottom: 10%;
 }
 .up:hover{
     color: #999b84 !important;
@@ -921,6 +914,105 @@ nav a:hover{
 .dark .up{
     color: var(--cream);
 }
+
+/* STYLE GUIDE */
+#style{
+    display: grid;
+    /* grid-gap: 5%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--creamdarker);
+    padding: 5% 5% 5% 5%;
+    /* padding: top right bottom left*/
+	grid-template-columns: 1.5fr .2fr .4fr 1.5fr;
+	grid-template-rows: .15fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "styletitle . . ."   
+    "styleNP . . stylecream"
+    "styleNP . . stylecreamdarker"
+    "styleNP cormorant montserrat stylecountdownlight"
+    "styleNP cormorant montserrat stylecountdown"
+    "styleNP cormorant montserrat styledarkbackground";
+}
+.dark #style{
+    background-color: var(--darkbackgrounddarker);
+}
+.styletitle{
+    grid-area: styletitle;
+    text-transform: uppercase;
+    align-items: center;
+}
+.styleNP{
+    grid-area: styleNP;
+    justify-content: flex-start;
+    align-items: flex-start;
+    letter-spacing: -0.5em;
+    margin-top: -45%;
+}
+.cormorant{
+    grid-area: cormorant;
+    justify-content: center;
+    align-items: flex-start; 
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding-right: 5%;
+}
+.montserrat{
+    grid-area: montserrat;
+    justify-content: center;
+    align-items: flex-start;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding-right: 10%;
+}
+.stylecream{
+    grid-area: stylecream;
+    background: var(--cream);
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.dark .stylecream{
+    color: var(--black);
+}
+.stylecreamdarker{
+    grid-area: stylecreamdarker;
+    background: var(--creamdarker);
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.dark .stylecreamdarker{
+    color: var(--black);
+}
+.stylecountdownlight{
+    grid-area: stylecountdownlight;
+    background: var(--countdownlight);
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.stylecountdown{
+    grid-area: stylecountdown;
+    background: var(--countdown);
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.styledarkbackground{
+    grid-area: styledarkbackground;
+    background: var(--darkbackground);
+    text-transform: uppercase;
+    color: var(--cream);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+
 
 /* COUNTDOWN */
 #countdown{
@@ -968,14 +1060,14 @@ nav a:hover{
     position: relative;
     overflow: hidden;
     font-family: "Brandon Grotesque", Arial;
-  }
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
+}
+.countdown .days,
+.countdown .hours,
+.countdown .minutes,
+.countdown .seconds {
     margin: 6px;
-  }
-  .countdown .amount {
+}
+.countdown .amount {
     display: inline-flex;
     justify-content: center;
     align-content: center;
@@ -984,8 +1076,8 @@ nav a:hover{
     font-size: clamp(32px, 7vw, 42px);
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.2em;
-  }
-  .countdown .amount::after {
+}
+.countdown .amount::after {
     content: "";
     display: block;
     position: absolute;
@@ -996,9 +1088,9 @@ nav a:hover{
     border-top: solid 1px rgba(200, 200, 200, 0.5);
     border-bottom: solid 1px rgba(0, 0, 0, 0.3);
     z-index: 1;
-  }
-  .countdown .digit,
-  .countdown .digit[data-countdown-next-digit]::after {
+}
+.countdown .digit,
+.countdown .digit[data-countdown-next-digit]::after {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1015,8 +1107,8 @@ nav a:hover{
     color: white;
     text-align: center;
     overflow: hidden;
-  }
-  .countdown .digit[data-countdown-next-digit]::after {
+}
+.countdown .digit[data-countdown-next-digit]::after {
     display: none;
     content: attr(data-countdown-next-digit);
     position: absolute;
@@ -1024,14 +1116,14 @@ nav a:hover{
     top: 0;
     /* animation-name: ticker-digit;
     animation-delay: 0; */
-  }
-  .countdown .label {
+}
+.countdown .label {
     display: block;
     padding-top: 2px;
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
-  }
+}
 
 /* FOOTER */
 footer a{
@@ -1227,6 +1319,15 @@ footer{
     #projects{
         height: 1340vh !important;
         grid-gap: .5%;
+    }
+    .styleNP{
+        font-size: 300px; 
+    }
+    .cormorant{
+        font-size: 16px; 
+    }
+    .montserrat{
+        font-size: 14px;
     }
     .countdown{
         justify-content: center;
@@ -1492,6 +1593,48 @@ footer{
     /* .up{
         padding-bottom: 150%;
     } */
+
+    /* STYLE */
+    #style{
+        padding-top: 10%;
+        padding-bottom: 15%;
+        grid-template-columns: 2fr .5fr .5fr;
+        grid-template-rows: .15fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "styletitle styletitle styletitle"   
+        "styleNP . ."
+        "styleNP cormorant montserrat"
+        "styleNP cormorant montserrat"
+        "styleNP . ."
+        "stylecream stylecream stylecream"
+        "stylecreamdarker stylecreamdarker stylecreamdarker"
+        "stylecountdownlight stylecountdownlight stylecountdownlight"
+        "stylecountdown stylecountdown stylecountdown"
+        "styledarkbackground styledarkbackground styledarkbackground";
+    }
+    .styletitle{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+    .styleNP{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* border: orange 2px solid; */
+        margin-top: 0%;
+        padding-bottom: 5%;
+    }
+    .cormorant{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .montserrat{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
     /* FOOTER */    
     footer{

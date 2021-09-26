@@ -15,6 +15,7 @@ sr.reveal('.digit', {
     delay: 1000
 }, 200) // delai en cascade en millisecondes
 
+
 // burger menu
 const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelector('.nav-links')
@@ -58,23 +59,6 @@ greetings()
 
 // letter animation
 // wrap every letter in a span
-// const textWrapper = document.querySelector('.work .letters')
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
-// anime.timeline({loop: true})
-//     .add({
-//         targets: '.work .letter',
-//         rotateY: [-90, 0],
-//         duration: 1300,
-//         delay: (el, i) => 45 * i
-//     })
-//     .add({
-//         targets: '.work',
-//         opacity: 0,
-//         duration: 1000,
-//         easing: "easeOutExpo",
-//         delay: 1000
-//     })
-
 const textWrapper = document.querySelector('.work')
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
 anime.timeline({loop: true})
@@ -95,6 +79,7 @@ anime.timeline({loop: true})
     duration: 1100,
     delay: (el, i) => 100 + 30 * i
   })
+
 
 // carousel
 let carousel = document.getElementById("carousel")
@@ -335,24 +320,6 @@ let countdowns = document.querySelectorAll('[data-countdown]')
     }
 }
 
-
-// const textWrap = document.querySelector('.touch')
-// textWrap.innerHTML = textWrap.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
-// anime.timeline({loop: true})
-//     .add({
-//         targets: '.touch .letter',
-//         translateY: [-60,0],
-//         easing: "easeOutExpo",
-//         duration: 1400,
-//         delay: (el, i) => 30 * i
-//     })
-//     .add({
-//         targets: '.touch',
-//         opacity: 0,
-//         duration: 1000,
-//         easing: "easeOutExpo",
-//         delay: 1000
-//     })
 
 // Wrap every letter in a span for the "Get in touch" letter animation with anime
 const textWrap = document.querySelector('.touch')

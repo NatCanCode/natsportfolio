@@ -9,22 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="shorcut icon" type="image" href="../images/pinwheelD8AC9C.svg">
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
+    <!-- <script src="/lib/scrollreveal.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link rel="shorcut icon" type="image" href="../images/pinwheel-light-gradient.svg">
     <title>Le portfolio de Nath</title>
 </head>
 <body>
     <div class="cursor"></div>
     <!-- HEADER -->
     <header id="header">
-        <nav class="flex">
+        <nav class="nav flex">
             <div class="hamburger">
                 <div class="line line1 toggle"></div>
                 <div class="line line2 toggle"></div>
                 <div class="line line3 toggle"></div>
             </div>
             <div class="nat flex">
-                <a href="#about"><img class="infinite-spin" src="../images/pinwheel0A0402.svg" alt="white-pinwheel-vector-origami-logo"></a>
+                <a href="#about"><img class="infinite-spin" src="../images/pinwheel-dark-gradient.svg" alt="gradient-pinwheel-vector-origami-logo"></a>
                 <div class="dark-light-switch">
                     <input type="checkbox" id="toggle" class="checkbox">
                     <label class="flick flex" for="toggle">
@@ -35,6 +38,7 @@
             <ul class="nav-links flex">
                 <li><a href="#about">A propos</a></li>
                 <li><a href="#projects">Projets</a></li>
+                <li><a href="#style">Style guide</a></li>
                 <li><a href="#countdown">Compte à rebours</a></li>
                 <li><a href="#footer">Contact</a></li>
                 <li><a href="index.html">EN</a></li>
@@ -44,15 +48,63 @@
         <section id="landing" class="container-landing flex">
             <h1 class="flipX">
                 <ul class="landing fluid">
-                    <li><span class="grow">Developpeuse web</span> Front-End.</li>
-                    <li>Spécialisée en <span class="grow">UX/UI design</span> et communication digitale.</li>
-                    <li><span class="grow">Bilingue</span> anglais.</li>
-                    <li>Basée à <span class="grow">Paris</span>.</li>
+                    <li class="fluid1"><span class="grow">Developpeuse web</span> Front-End.</li>
+                    <li class="fluid2">Spécialisée en <span class="grow">UX/UI design</span> et communication digitale.</li>
+                    <li class="fluid3"><span class="grow">Bilingue</span> anglais.</li>
+                    <li class="fluid4">Basée à <span class="grow">Paris</span>.</li>
                 </ul> 
             </h1>
-            <div class="scroll-animation">
+            <!-- <div class="container"> -->
+				<div class="container-digits flex">
+					<!-- <div class="container-img-wrap">
+						<div class="container-img"></div>
+					</div> -->
+					<div class="item item1 flex">1</div>
+                    <div class="item item2 flex">2</div>
+                    <div class="item item3 flex">3</div>
+                    <div class="item item4 flex">4</div>
+                    <div class="item item5 flex">5</div>
+                    <div class="item item6 flex">6</div>
+                    <div class="item item7 flex">7</div>
+					<!-- <div class="item">
+						<a href="#" class="container-item" data-img="image-two.jpg">
+							<h6>2</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-three.jpg">
+							<h6>3</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-four.jpg">
+							<h6>4</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-five.jpg">
+							<h6>5</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-six.jpg">
+							<h6>6</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-seven.jpg">
+							<h6>7</h6>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#" class="container-item" data-img="image-eight.jpg">
+							<h6>8</h6>
+						</a>
+					</div> -->
+				<!-- </div> -->
+            <!-- <div>
                 <a href="#about"><p class="scroll flex">Scroll to continue</p></a>
-            </div>
+            </div> -->
         </section>
     </header>
 
@@ -75,42 +127,86 @@
                     <li class="flex">Les technologies que j'utilise sont HTML5, CSS3, JavaScript, Python et React, et je prototype avec Figma.</li>
                     <li class="flex">Je suis totalement accro au café ET au thé, je suis inspirée par mes pairs et mes collègues, mon petit coeur, mon partenaire, mon chat ronchon, et tout ce qui touche à la photographie, et aux innovations dans le secteur de la MedTech.</li>
                     <li class="flex">Je prends plaisir à construire et développer des projects qui peuvent contribuer à rendre le monde meilleur.</li>
-                    <li class="flex work">
-                        <span class="text-wrapper">
-                            <span class="letters">
-                            Voulez-vous qu'on travaille ensemble?
-                            </span>
-                        </span>
-                    </li>
+                    <li class=" work">On travaille ensemble ?</li>
+                    <div class="container-eight flex">
+                        <div class="eight flex">8</div>
+                    </div>
                 </ul>
                 <button class="button flex"><a href="mailto:nathalie.piat1@gmail.com">Laissez-moi un mot</a></button>
             </article>
         </section>
 
         <!-- SKILLS -->
-        <section id="softskills">
-            <h3 class="skillstitle flex">Soft skills</h3>
-            <img class="icon1 flex" src="../images/eye-for-detail.svg"></img>
-            <img class="icon2 flex" src="../images/fast-learner.svg"></img>
-            <img class="icon3 flex" src="../images/creative.svg"></img>
-            <img class="icon4 flex" src="../images/problem-solver.svg"></img>
+        <section id="skills">
+            <h3 class="softskillstitle flex">Soft skills</h3>
+            <img class="icon1 flex" src="../images/eye-dark-gradient.svg"></img>
+            <img class="icon2 flex" src="../images/learner-dark-gradient.svg"></img>
+            <img class="icon3 flex" src="../images/creative-dark-gradient.svg"></img>
+            <img class="icon4 flex" src="../images/solver-dark-gradient.svg"></img>
             <li class="skill1 flex">Souci du detail</li>
             <li class="skill2 flex">Apprend rapidement</li>
             <li class="skill3 flex">Esprit créatif</li>
-            <li class="skill4 flex">Résolution de problème</li>
+            <li class="skill4 flex">Résolution de problèmes</li>
+
+            <h3 class="hardskillstitle flex">Hard skills</h3>
+            <div id="hardskills" class="hardskillsbars flex">
+                <div class="align flex">
+                    <p class="hardtitle">HTML5</p>
+                    <div class="bar">
+                        <div class="inside inside1"></div>
+                    </div>
+                    <h5>90%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">CSS3</p>
+                    <div class="bar">
+                        <div class="inside inside2"></div>
+                    </div>
+                    <h5>90%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle hardtitleJS">JavaScript</p>
+                    <div class="bar">
+                        <div class="inside inside3"></div>
+                    </div>
+                    <h5>60%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">Python</p>
+                    <div class="bar">
+                        <div class="inside inside4"></div>
+                    </div>
+                    <h5>70%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">React</p>
+                    <div class="bar">
+                        <div class="inside inside5"></div>
+                    </div>
+                    <h5>50%</h5>
+                </div>
+                <div class="align flex">
+                    <p class="hardtitle">Figma</p>
+                    <div class="bar">
+                        <div class="inside inside6"></div>
+                    </div>
+                    <h5>85%</h5>
+                </div>
+            </div>
+
             <button class="flex skillsbutton"><a href="https://www.linkedin.com/in/nathaliepiat/">Pour en savoir plus</a></button>
         </section>
 
         <section id="loop">
             <div class="loop-line">
-                <h4 class="loop-word">#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush</div>
-                </h4>
+                <h4 class="loop-word">#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush</h4>
+            </div>
         </section>
 
         <!-- PROJECTS -->
         <section id="projects" class="projects">
             <h3 class="projectstitle flex">Projets</h3>
-            <img class="weatherpic flex" src="../images/worldweather.png" alt="">
+            <img class="weatherpic flex" src="../images/worldweather.png" alt="world-weather-app-screen-shot-blue-purple">
             <!-- <video autoplay muted loop id="myvideo">
                 <source src="..images/weatherapp.mov" type="video/mp4">
             </video> -->
@@ -118,38 +214,37 @@
                 <h5>App météo</h5>
                 <p>Pour obtenir la météo en temps réel absolument partout dans le monde ! L'une de mes premières pages web véritablement interactives, codée en HTML, CSS, JavaScript, et en utilisant deux APIs.<br><a href="https://natcancode.github.io/worldweather/static/index.html">Prêt à tester ?</a></p>
             </article>
-            <img class="medtechpic" src="../images/medtech-homepage.png" alt="">
+            <img class="medtechpic" src="../images/medtech-homepage.png" alt="medtech-homepage-obey-picture-cream-green">
             <article class="medtechtext flex">
                 <h5>Prix #Hackeuses Simplon</h5>
-                <p>Mon tout premier project de site web, en français et en anglais, présenté devant un jury de développeurs professionnels. Thème de la certification : "Femmes et numérique, je code donc je suis".<br>Prix du jury #Hackeuses reçu pour le <a href="https://natcancode.github.io/medtech/english.html"></a>design du site</a> et l'originalité du sujet.</p>
+                <p>Mon tout premier project de site web, en français et en anglais, présenté devant un jury de développeurs professionnels. Thème de la certification : "Femmes et numérique, je code donc je suis".<br>Prix du jury #Hackeuses reçu pour le <a href="https://natcancode.github.io/medtech/english.html">design du site</a> et l'originalité du sujet.</p>
             </article>
-            <img class="picsharepic" src="../images/picshare-homepage.png" alt="">
+            <img class="picsharepic" src="../images/picshare-homepage.png" alt="picshare-homepage-dog-picture-gallery-blue-navy-white">
             <article class="picsharetext flex">
                 <h5>PicShare</h5>
                 <p>Projet de groupe réalisé à Matrice : création d'un site web pour partager des images en utilisant une base de données SQLite. Les utilisateurs peuvent uploader des visuels, que d'autres utilisateurs peuvent voir et commenter.</p>
             </article>
-            <img class="swipepic" src="../images/photoswipe.png" alt="">
-            <!-- <iframe class="swipepic" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FP02EZ2EAEK2dZGPIht44au%2FPhotoSwipe-UX%3Fpage-id%3D0%253A1%26node-id%3D14%253A170%26viewport%3D241%252C48%252C0.22%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A113" allowfullscreen></iframe> -->
+            <img class="swipepic" src="../images/photoswipe.png" alt="swipepic-homepage-animal-imahge-gallery-pink-black-white">
             <article class="swipetext flex">
                 <h5>PhotoSwipe</h5>
-                <p>Travail d'équipe sur le Design Thinking, persona, UX/UI design dans le but de créer un prototype sur Figma. Blablabla.</p>
+                <p>Travail d'équipe sur le Design Thinking, persona, UX/UI design dans le but de créer un <a href="https://www.figma.com/proto/P02EZ2EAEK2dZGPIht44au/PhotoSwipe-UX?page-id=0%3A1&node-id=2%3A239&viewport=277%2C48%2C0.19&scaling=scale-down&starting-point-node-id=2%3A113">prototype sur Figma</a>. L'objectif de ce projet "business unit" était de simuler, en mode scrum, la création d'une plateforme de tri de photos, avec rapidité et efficacité.</p>
             </article>
-            <img class="flourshowerpic" src="../images/flourshower.png" alt="">
+            <img class="flourshowerpic" src="../images/flourshower.png" alt="bakery-homepage-white-blue-yellow">
             <article class="flourshowertext flex">
                 <h5>Flour Shower</h5>
                 <p>Pages HTML/CSS entièrement responsive, réalisées à partir de mockups. L'exercice n'était pas de re-designer le site web d'un patissier, mais d'implémenter les 5 pages à la lettre, avec un code propre. C'est avec ce projet que je me suis prise de passion pour les grids, et les titres qui chevauchent des blocs !<br>J'ai même gagné des points supplémentaires en faisant un embed des informations GoogleMaps sur la page contact ! <br>Vous pouvez naviguer à travers <a href="https://natcancode.github.io/flourshowerproject/flourshower3.html">les pages</a> du projet en cliquant sur les boutons, et les liens About, Contact, Unavoidable, Amazing dans le header et footer.</p>
             </article>
-            <img class="eshoppic" src="../images/eshop-terra.png" alt="">
+            <img class="eshoppic" src="../images/eshop-terra.png" alt="eshop-women-clothes-homepage-cream-black-oldpink">
             <article class="eshoptext flex">
                 <h5>Terra E-shop</h5>
                 <p>Projet de <a href="https://natcancode.github.io/EcommerceTerra/">site e-commerce</a> construit à Simplon. Attention particulière donnée au design UX/UI, de la landing page, en passant par les pages panier et paiement. <br>Approche "Mobile first", animation du titre en JavaScript, carrousel.</p>
             </article>
-            <img class="imagegallerypic" src="../images/image-gallery-animation.png" alt="">
+            <img class="imagegallerypic" src="../images/image-gallery-animation.png" alt="image-gallery-page-pink-flower-black-background-pink-caption">
             <article class="imagegallerytext flex">
                 <h5>Animation d'une galerie d'images</h5>
                 <p>Projet personnel sur l'animation d'une <a href="https://natcancode.github.io/image-gallery-animation/">galerie d'images</a> en codant avec JavaScrip. Pop-up d'images fluide avec une légende en aperçu. Les images sont cliquables, elles s'agrandissent lorsqu'on clique dessus, et la légende s'affiche.</p>
             </article>
-            <img class="jsanimationspic" src="../images/letter-animations.png" alt="">
+            <img class="jsanimationspic" src="../images/letter-animations.png" alt="cream-camera-addict-title-camera-picture-black-background">
             <article class="jsanimationstext flex">
                 <h5>Animations de lettres</h5>
                 <p>Projet personnel sur l'animation de <a href="https://natcancode.github.io/loading-letter-animation/">lettres</a> en JavaScript en utilisant des librairies JS - Anime et ScrollReveal - et création d'un effet de lettrage au chargement lorsque la connexion est lente.</p>
@@ -168,6 +263,20 @@
             <h4 class="phototitle flex">Selected pictures</h4>
         </section>    -->
 
+        <!-- STYLE GUIDE -->
+        <section id="style">
+            <h3 class="styletitle flex">Style Guide</h3>
+            <h6 class="styleNP flex">NP</h6>
+            <h5 class="cormorant flex">Cormorant light</h5>
+            <h4 class="montserrat flex">Montserrat regular</h4>
+            <h5 class="stylecream flex">#FFFFF4</h5>
+            <h5 class="stylecreamdarker flex">#F8F8EA</h5>
+            <h5 class="stylecountdownlight flex">#DDC2AE</h5>
+            <h5 class="stylecountdown flex">#CDA382</h5>
+            <h5 class="styledarkbackground flex">#322F3D</h5>
+        </section>
+
+        <!-- COUNTDOWN -->
         <section id="countdown">
             <h3  class="countdowntext grow-small">Ma formation Tech <br>Manager à <a href="https://matrice.io/ecole/tech-front">Matrice</a><br>s'achève bientôt !</h3>
             <div class="countdown flex"
@@ -215,6 +324,7 @@
         </div>
     </footer>
     
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../script/french.js"></script>
