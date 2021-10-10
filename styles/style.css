@@ -444,7 +444,7 @@ nav a:hover{
     font-size: clamp(40px, 7vw, 75px);
 }
 .cartoonpic img{
-    border-radius: 5px;
+    border-radius: 1px;
 }
 .aboutme{
     grid-area: about;
@@ -459,7 +459,7 @@ nav a:hover{
 }
 
 /* Eight */
-.eight{
+/* .eight{
 	position: absolute;
     width: 30%;
     height: 100%;
@@ -470,7 +470,7 @@ nav a:hover{
     font-family: 'Cormorant', serif;
     font-weight: 400;
     opacity: 10%;
-}
+} */
 
 /* Carousel */
 #carousel{
@@ -492,12 +492,104 @@ nav a:hover{
 /* SKILLS */
 #skills{
     display: grid;
+    grid-gap: 2%;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--cream);
+    padding: 5% 5% 5% 5%;
+	grid-template-columns: repeat(80px, 16);
+	grid-template-rows: 2fr 80px 80px 2fr;
+    grid-template-areas:
+    "softskillstitle softskillstitle softskillstitle . . . . . . . . . . hardskillstitle hardskillstitle hardskillstitle" 
+    "skill1 skill1 skill2 skill2 skill3 skill3 skill4 skill4 . . . . html css js figm"
+    "skill1 skill1 skill2 skill2 skill3 skill3 skill4 skill4 . . . . react py wp gith"
+    ". . . . skillsbutton skillsbutton skillsbutton skillsbutton skillsbutton skillsbutton skillsbutton skillsbutton . . . .";
+}
+.dark #skills{
+    background-color: var(--darkbackground);
+}
+.softskillstitle{
+    grid-area: softskillstitle;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    line-height: 60px;
+}
+.hardskillstitle{
+    grid-area: hardskillstitle;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    line-height: 60px;
+}
+.skill1{
+    grid-area: skill1;
+    background: var(--countdown);
+}
+.skill2{
+    grid-area: skill2;
+    background: var(--countdownlight);
+}
+.skill3{
+    grid-area: skill3;
+    background: #E7E6DC;
+}
+.skill4{
+    grid-area: skill4;
+    background: var(--creamdarker);
+}
+.soft{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    width: 170px;
+    height: 170px;
+}
+.html{
+    grid-area: html;
+}
+.css{
+    grid-area: css;
+}
+.js{
+    grid-area: js;
+}
+.figm{
+    grid-area: figm;
+}
+.react{
+    grid-area: react;
+} 
+.py{
+    grid-area: py;
+}
+.wp{
+    grid-area: wp;
+} 
+.gith{
+    grid-area: gith;
+}
+.hard{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+}
+.skillsbutton{
+    grid-area: skillsbutton;
+    justify-content: center;
+    justify-self: center;
+    width: 70%;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+/* #skills{
+    display: grid;
     grid-gap: 3%;
     min-height: 100vh;
     width: 100vw;
     background-color: var(--cream);
     padding: 5% 5% 5% 5%;
-    /* padding: top right bottom left*/
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: .3fr .3fr .3fr .3fr .3fr .7fr;
     grid-template-areas:
@@ -589,7 +681,6 @@ nav a:hover{
     margin-bottom: 20%;
 }
 #hardskills{
-    /* width: 100vw; */
     height: 450px;
     flex-direction: column;
     justify-content: center;
@@ -608,9 +699,7 @@ nav a:hover{
 .bar{
     width: 80%;
     height: 30px;
-    /* border: 1px solid #efd9d1; */
     margin: 0 50px 4%;
-    /* margin: top right bottom left*/
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -621,9 +710,6 @@ nav a:hover{
     background: linear-gradient(#DDC2AE, #DDC2AE, #0A0402);
     animation: slide1 2s ease-in-out;
 }
-/* .dark .inside{
-    background: linear-gradient(#CDA382, #DDC2AE, #FFFFF4);
-} */
 .inside1{
     width: 100%;
 }
@@ -665,7 +751,7 @@ nav a:hover{
 @keyframes slide6{
     from{width: 0;}
     to{width: 85%;}
-}
+} */
 
 /* LOOP */
 #loop{
@@ -728,8 +814,8 @@ nav a:hover{
     "projectstitle projectstitle"
     "weatherpic medtechpic"
     "weathertext medtechtext"
-    "picsharepic swipepic"
-    "picsharetext swipetext"
+    "swipepic emojipic"
+    "swipetext emojitext"
     "flourshowerpic eshoppic"
     "flourshowertext eshoptext"
     "imagegallerypic jsanimationspic"
@@ -750,7 +836,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -767,9 +853,8 @@ nav a:hover{
 }
 .medtechpic{
     grid-area: medtechpic;
-    border-radius: 3px;
+    border-radius: 1px;
     justify-self: center;
-    border-radius: 5px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -783,11 +868,10 @@ nav a:hover{
     padding: 0% 7% 5% 7%;
     /* padding: top right bottom left*/
 }
-.picsharepic{
+/* .picsharepic{
     grid-area: picsharepic;
-    border-radius: 3px;
+    border-radius: 1px;
     justify-self: center;
-    border-radius: 5px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -799,15 +883,14 @@ nav a:hover{
     flex-direction: column;
     justify-content: flex-start;
     padding: 0% 7% 5% 7%;
-}
+} */
 /* iframe{
     width: 80%;
 } */
 .swipepic{
     grid-area: swipepic;
-    border-radius: 3px;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -821,11 +904,26 @@ nav a:hover{
     padding: 0% 7% 5% 7%;
     /* padding: top right bottom left*/
 }
+.emojipic{
+    grid-area: emojipic;
+    border-radius: 1px;
+    justify-self: center;
+    height: 90vh;
+    transition: transform 330ms ease-in-out;
+}
+.emojipic:hover{
+    transform: scale(1.1);
+}
+.emojitext{
+    grid-area: emojitext;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0% 7% 5% 7%;
+}
 .flourshowerpic{
     grid-area: flourshowerpic;
-    border-radius: 3px;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -840,9 +938,8 @@ nav a:hover{
 }
 .eshoppic{
     grid-area: eshoppic;
-    border-radius: 3px;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -858,9 +955,8 @@ nav a:hover{
 }
 .imagegallerypic{
     grid-area: imagegallerypic;
-    border-radius: 3px;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -875,9 +971,8 @@ nav a:hover{
 }
 .jsanimationspic{
     grid-area: jsanimationspic;
-    border-radius: 3px;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 90vh;
     transition: transform 330ms ease-in-out;
 }
@@ -1239,8 +1334,7 @@ footer{
         margin-bottom: 15%;
     }
     .skillsbutton{
-        margin-top: -20%;
-        margin-bottom: 10%;
+        margin-bottom: 30%;
     }
     footer{
         grid-row-gap: 3%;
@@ -1313,6 +1407,9 @@ footer{
     }
     #skills{
         margin-bottom: 10%;
+    }
+    .skillsbutton{
+        margin-bottom: 30%;
     }
     .hardskillsbars{
         margin-top: -16%;
@@ -1500,32 +1597,46 @@ footer{
     #skills{
         padding: 10% 5% 13% 5%;
         /* padding: top right bottom left*/
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: .3fr .3fr .1fr .3fr .1fr .6fr .7fr .2fr;
+        grid-gap: 2%;
+        grid-template-columns: repeat(1fr, 4);
+        grid-template-rows: repeat(1fr, 9);
         grid-template-areas:
-        "softskillstitle softskillstitle" 
-        "icon1 icon2"   
-        "skill1 skill2"
-        "icon3 icon4"
-        "skill3 skill4"
-        "hardskillstitle hardskillstitle"
-        "hardskillsbars hardskillsbars"
-        "skillsbutton skillsbutton";
+        "softskillstitle softskillstitle softskillstitle softskillstitle" 
+        "skill1 skill1 skill2 skill2"
+        "skill1 skill1 skill2 skill2"
+        "skill3 skill3 skill4 skill4"
+        "skill3 skill3 skill4 skill4"
+        "hardskillstitle hardskillstitle hardskillstitle hardskillstitle" 
+        "html css js figm"
+        "react py wp gith"
+        "skillsbutton skillsbutton skillsbutton skillsbutton";
     }
     .softskillstitle{
         justify-content: center;
         align-items: center;
+        margin-bottom: 10%;
     }
     .hardskillstitle{
         justify-content: center;
         align-items: center;
-        margin-bottom: -5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     .skillsbutton{
         justify-content: center;
         align-items: center;
         justify-self: center;
         width: 70%;
+    }
+    .soft{
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+    .hard{
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
     }
     .loop-line > :first-child{
         margin-top: 5%;
@@ -1546,10 +1657,10 @@ footer{
         "weatherpic"
         "medtechtext"
         "medtechpic"
-        "picsharetext"
-        "picsharepic"
         "swipetext"
         "swipepic"
+        "emojitext"
+        "emojipic"
         "flourshowertext" 
         "flourshowerpic"
         "eshoptext"
@@ -1573,10 +1684,13 @@ footer{
     .medtechpic{
         margin-bottom: 10%;
     }
-    .picsharepic{
+    /* .picsharepic{
+        margin-bottom: 10%;
+    } */
+    .swipepic{
         margin-bottom: 10%;
     }
-    .swipepic{
+    .emojipic{
         margin-bottom: 10%;
     }
     .flourshowerpic{
