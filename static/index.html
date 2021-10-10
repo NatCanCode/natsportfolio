@@ -5,22 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
-    <!-- <script src="/lib/scrollreveal.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="shorcut icon" type="image" href="../images/pinwheel-light-gradient.svg">
     <title>Nat's portfolio</title>
 </head>
-<body>
+<body data-scroll-container>
     <div class="cursor"></div>
     <!-- HEADER -->
-    <header id="header">
-        <nav class="nav flex">
+    <header id="header" data-scroll-section>
+        <nav class="nav flex" data-scroll>
             <div class="hamburger">
                 <div class="line line1 toggle"></div>
                 <div class="line line2 toggle"></div>
@@ -45,27 +41,27 @@
             </ul>
         </nav>
 
-        <section id="landing" class="container-landing flex">
-            <h1 class="flipX">
-                <ul class="landing fluid">
-                    <li class="fluid1">Front-End <span class="grow">Web Developer</span>.</li>
-                    <li class="fluid2">Working in <span class="grow">UX/UI design</span> and digital communications.</li>
-                    <li class="fluid3">English/French <span class="grow">fluent</span>.</li>
-                    <li class="fluid4">Based in <span class="grow">Paris</span>.</li>
+        <section id="landing" class="container-landing flex" data-scroll-section>
+            <h1 class="flipX" data-scroll>
+                <ul class="landing fluid" data-scroll>
+                    <li data-scroll class="fluid1">Front-End <span class="grow">Web Developer</span>.</li>
+                    <li data-scroll class="fluid2">Working in <span class="grow">UX/UI design</span> & digital communications.</li>
+                    <li data-scroll class="fluid3"><h2>English/French fluent.</h2></li>
+                    <li data-scroll class="fluid4"><h2>Based in Paris.</h2> </li>
                 </ul> 
             </h1>
             <!-- <div class="container"> -->
-				<div class="container-digits flex">
+				<div class="container-digits flex" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
 					<!-- <div class="container-img-wrap">
 						<div class="container-img"></div>
 					</div> -->
-					<div class="item item1 flex">1</div>
-                    <div class="item item2 flex">2</div>
-                    <div class="item item3 flex">3</div>
-                    <div class="item item4 flex">4</div>
-                    <div class="item item5 flex">5</div>
-                    <div class="item item6 flex">6</div>
-                    <div class="item item7 flex">7</div>
+					<div class="item item1 flex" data-scroll>1</div>
+                    <div class="item item2 flex" data-scroll>2</div>
+                    <div class="item item3 flex" data-scroll>3</div>
+                    <div class="item item4 flex" data-scroll>4</div>
+                    <div class="item item5 flex" data-scroll>5</div>
+                    <div class="item item6 flex" data-scroll>6</div>
+                    <div class="item item7 flex" data-scroll>7</div>
 					<!-- <div class="item">
 						<a href="#" class="container-item" data-img="image-two.jpg">
 							<h6>2</h6>
@@ -111,45 +107,42 @@
     <!-- MAIN -->
     <main>
         <!-- ABOUT -->
-        <section id="about">
-            <h3 id="greetings" class="abouttitle grow-small flex">Hey,  I'm Nathalie!</h3>
-            <ul id="carousel" class="cartoonpic flex" >
-                <li class="slider" style="opacity:1;"><img src="../images/pinklips.jpg" alt="cartoon-pic-of-nat-with-blond-hair-and-pink-lips"></li>
-                <li class="slider"><img src="../images/redlips.jpg" alt="cartoon-pic-of-nat-with-blond-hair-and-red-lips">
+        <section id="about" data-scroll-section>
+            <h2 id="greetings" class="abouttitle grow-small flex" data-scroll data-scroll-speed="1">Hey,  I'm Nathalie!</h2>
+            <ul id="carousel" class="cartoonpic flex" data-scroll data-scroll-speed="3">
+                <li data-scroll class="slider" style="opacity:1;"><img src="../images/pinklips.jpg" alt="cartoon-pic-of-nat-with-blond-hair-and-pink-lips"></li>
+                <li data-scroll class="slider"><img src="../images/redlips.jpg" alt="cartoon-pic-of-nat-with-blond-hair-and-red-lips">
                 </li>
-                <li class="slider"><img src="../images/redgreyhair.jpg" alt="cartoon-pic-of-nat-with-grey-and-red-hair-and-pink-lips">
+                <li data-scroll class="slider"><img src="../images/redgreyhair.jpg" alt="cartoon-pic-of-nat-with-grey-and-red-hair-and-pink-lips">
                 </li>
             </ul>
-            <article class="aboutme flex container-eight">
-                <ul>
-                    <li class="flex">I'm a junior Web Developer living in Paris, previously working in international communications, and always up for learning new things.</li>
-                    <li class="flex">At the crossroads between UX/UI design and Front-End Development, I aim to create neat, minimalist, and responsive websites. I strive for simplicity, clarity, and purity in my work.</li>
-                    <li class="flex">The technologies I usually use are HTML5, CSS3, JavaScript, Python and React, and I prototype with Figma.</li>
-                    <li class="flex">I’m a coffee AND tea addict, inspired by my peers and colleagues, my little one, my partner, my grumpy cat, anything and everything photography related, and MedTech innovation.</li>
-                    <li class="flex">I take pride in building and developing projects that can help make the world a better place.</li>
-                    <li class=" work">Interested in working together?</li>
-                    <div class="container-eight flex">
-                        <div class="eight flex">8</div>
-                    </div>
+            <article class="aboutme flex" data-scroll>
+                <ul data-scroll>
+                    <li class="flex" data-scroll data-scroll-speed="1">I'm a junior Web Developer living in Paris, previously working in international communications, and always up for learning new things.</li>
+                    <li class="flex" data-scroll data-scroll-speed="1">At the crossroads between UX/UI design and Front-End Development, I aim to create neat, minimalist, and responsive websites. I strive for simplicity, clarity, and purity in my work.</li>
+                    <li class="flex" data-scroll data-scroll-speed="1">The technologies I usually use are HTML5, CSS3, JavaScript, React.js and Python, and I prototype with Figma.</li>
+                    <li class="flex" data-scroll data-scroll-speed="1">I’m a coffee AND tea addict, inspired by my peers and colleagues, my little one, my partner, my grumpy cat, anything and everything photography related, and MedTech innovation.</li>
+                    <li class="flex" data-scroll data-scroll-speed="1">I take pride in building and developing projects that can help make the world a better place.</li>
+                    <li class="work" data-scroll data-scroll-speed="1">Interested in working together?</li>
                 </ul>
-                <button class="button flex"><a href="mailto:nathalie.piat1@gmail.com">Drop a note</a></button>
+                <button data-scroll data-scroll-speed="1" class="button flex"><a href="mailto:nathalie.piat1@gmail.com">Drop a note</a></button>
             </article>
         </section>
 
         <!-- SKILLS -->
-        <section id="skills">
-            <h3 class="softskillstitle flex">Soft skills</h3>
-            <img class="icon1 flex" src="../images/eye-dark-gradient.svg"></img>
-            <img class="icon2 flex" src="../images/learner-dark-gradient.svg"></img>
-            <img class="icon3 flex" src="../images/creative-dark-gradient.svg"></img>
-            <img class="icon4 flex" src="../images/solver-dark-gradient.svg"></img>
-            <li class="skill1 flex">Eye for details</li>
-            <li class="skill2 flex">Fast learner</li>
-            <li class="skill3 flex">Creative spirit</li>
-            <li class="skill4 flex">Problem solver</li>
+        <section id="skills" data-scroll-section>
+            <h2 class="softskillstitle flex" data-scroll data-scroll-speed="1">Soft skills</h2>
+            <img class="icon1 flex" data-scroll src="../images/eye-dark-gradient.svg"></img>
+            <img class="icon2 flex" data-scroll src="../images/learner-dark-gradient.svg"></img>
+            <img class="icon3 flex" data-scroll src="../images/creative-dark-gradient.svg"></img>
+            <img class="icon4 flex" data-scroll src="../images/solver-dark-gradient.svg"></img>
+            <li class="skill1 flex" data-scroll>Eye for details</li>
+            <li class="skill2 flex" data-scroll>Fast learner</li>
+            <li class="skill3 flex" data-scroll>Creative spirit</li>
+            <li class="skill4 flex" data-scroll>Problem solver</li>
             
-            <h3 class="hardskillstitle flex">Hard skills</h3>
-            <div id="hardskills" class="hardskillsbars flex">
+            <h2 class="hardskillstitle flex" data-scroll data-scroll-speed="1">Hard skills</h2>
+            <div id="hardskills" class="hardskillsbars flex" data-scroll>
                 <div class="align flex">
                     <p class="hardtitle">HTML5</p>
                     <div class="bar">
@@ -194,60 +187,60 @@
                 </div>
             </div>
 
-            <button class="flex skillsbutton"><a href="https://www.linkedin.com/in/nathaliepiat/">Read more</a></button>
+            <button class="flex skillsbutton" data-scroll data-scroll-speed="1"><a href="https://www.linkedin.com/in/nathaliepiat/">Read more</a></button>
         </section>
 
-        <section id="loop">
-            <div class="loop-line">
-                <h4 class="loop-word">#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush</h4>
+        <section id="loop" data-scroll-section>
+            <div class="loop-line" data-scroll>
+                <h4 class="loop-word" data-scroll>#FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush #FluentEnglishFrench #InternationalCommunications #DigitalContent #MedTech  #CommunityManagement #SocialMedia #WebDev #FrontEnd #Code #EyeForDetails #FastLearner #CreativeSpirit #HealthTech #Design #Photography #Art #ActiveListening #Caring #Fairness #MoveForward #MobileFirst #HTML #CSS #JavaScript #JQuery #React #Python #Figma #Wordpress #WomenInTech #GirlsCanCode #InCodeWeTrust #BeYourself #KeepOnLearning #Inclusiveness #Patience #Motivation #CatMum #TeaAddict #CoffeeLover #SheHer #Commitment #NeverGiveUp #BadAss #WeAreNotWaiting #Loop #WebDeveloper #GitLog #GitStatus #GitInit #GitAdd #GitCommit #GitPush</h4>
             </div>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="projects">
-            <h3 class="projectstitle flex">Selected projects</h3>
-            <img class="weatherpic flex" src="../images/worldweather.png" alt="world-weather-app-screen-shot-blue-purple">
+        <section id="projects" class="projects" data-scroll-section>
+            <h2 class="projectstitle flex" data-scroll data-scroll-speed="1">Selected projects</h2>
+            <img class="weatherpic flex" data-scroll data-scroll-speed="1" src="../images/worldweather.png" alt="world-weather-app-screen-shot-blue-purple">
             <!-- <video autoplay muted loop id="myvideo">
                 <source src="..images/weatherapp.mov" type="video/mp4">
             </video> -->
-            <article class="weathertext flex">
-                <h5>Weather app</h5>
-                <p>Getting the weather in real time absolutely everywhere in the  world! One of my first proper interactive web pages - coded in HTML, CSS, JavaScript, and using two APIs.<br><a href="https://natcancode.github.io/worldweather/static/index.html">Want to try it?</a></p>
+            <article class="weathertext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>Weather app</h3>
+                <p data-scroll>Getting the weather in real time absolutely everywhere in the  world! One of my first proper interactive web pages - coded in HTML, CSS, JavaScript, and using two APIs.<br><a href="https://natcancode.github.io/worldweather/static/index.html">Want to try it?</a></p>
             </article>
-            <img class="medtechpic" src="../images/medtech-homepage.png" alt="medtech-homepage-obey-picture-cream-green">
-            <article class="medtechtext flex">
-                <h5>Simplon #Hackeuses Certification Award</h5>
-                <p>My very first website project - English and French pages - presented to a jury of professional web developers. Certification subject: "Women and tech - I code therefore I am".<br>#Hackeuses jury prize awarded for the <a href="https://natcancode.github.io/medtech/english.html">website design</a> and subject originality.</p>
+            <img class="medtechpic" data-scroll data-scroll-speed="1" src="../images/medtech-homepage.png" alt="medtech-homepage-obey-picture-cream-green">
+            <article class="medtechtext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>Simplon #Hackeuses Certification Award</h3>
+                <p data-scroll>My very first website project - English and French pages - presented to a jury of professional web developers. Certification subject: "Women and tech - I code therefore I am".<br>#Hackeuses jury prize awarded for the <a href="https://natcancode.github.io/medtech/english.html">website design</a> and subject originality.</p>
             </article>
-            <img class="picsharepic" src="../images/picshare-homepage.png" alt="picshare-homepage-dog-picture-gallery-blue-navy-white">
-            <article class="picsharetext flex">
-                <h5>PicShare</h5>
-                <p>Team project at Matrice building a website to share images using an SQLite database. Users being able to upload their own images and other users being able to view and comment the images. </p>
+            <img class="picsharepic" data-scroll data-scroll-speed="1" src="../images/picshare-homepage.png" alt="picshare-homepage-dog-picture-gallery-blue-navy-white">
+            <article class="picsharetext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>PicShare</h3>
+                <p data-scroll>Team project at Matrice building a website to share images using an SQLite database. Users being able to upload their own images and other users being able to view and comment the images. </p>
             </article>
-            <img class="swipepic" src="../images/photoswipe.png" alt="swipepic-homepage-animal-imahge-gallery-pink-black-white">
-            <article class="swipetext flex">
-                <h5>PhotoSwipe</h5>
-                <p>Teamwork on Design Thinking, persona, UX/UI design, and <a href="https://www.figma.com/proto/P02EZ2EAEK2dZGPIht44au/PhotoSwipe-UX?page-id=0%3A1&node-id=2%3A239&viewport=277%2C48%2C0.19&scaling=scale-down&starting-point-node-id=2%3A113">   prototyping with Figma</a>. The objective of this business unit project was to simulate, in scrum mode, the creation of a photo sorting platform, with speed and efficiency.</p>
+            <img class="swipepic" data-scroll data-scroll-speed="1" src="../images/photoswipe.png" alt="swipepic-homepage-animal-imahge-gallery-pink-black-white">
+            <article class="swipetext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>PhotoSwipe</h3>
+                <p data-scroll>Teamwork on Design Thinking, persona, UX/UI design, and <a href="https://www.figma.com/proto/P02EZ2EAEK2dZGPIht44au/PhotoSwipe-UX?page-id=0%3A1&node-id=2%3A239&viewport=277%2C48%2C0.19&scaling=scale-down&starting-point-node-id=2%3A113">   prototyping with Figma</a>. The objective of this business unit project was to simulate, in scrum mode, the creation of a photo sorting platform, with speed and efficiency.</p>
             </article>
-            <img class="flourshowerpic" src="../images/flourshower.png" alt="bakery-homepage-white-blue-yellow">
-            <article class="flourshowertext flex">
-                <h5>Flour Shower</h5>
-                <p>Fully responsive HTML/CSS pages built from mockups. The job was not to re-design a 5-page bakery website but to faithfully implement the provided visuals with a clean code. This is where I got hooked on grids, and titles that overlap blocks!<br>I got bonus points awarded for the embedded GoogleMaps information on the contact page! <br>You can navigate through the <a href="https://natcancode.github.io/flourshowerproject/flourshower3.html">project pages</a> clicking on the buttons and the About, Contact, Unavoidable, Amazing links on the header and footer.</p>
+            <img class="flourshowerpic" data-scroll data-scroll-speed="1" src="../images/flourshower.png" alt="bakery-homepage-white-blue-yellow">
+            <article class="flourshowertext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>Flour Shower</h3>
+                <p data-scroll>Fully responsive HTML/CSS pages built from mockups. The job was not to re-design a 5-page bakery website but to faithfully implement the provided visuals with a clean code. This is where I got hooked on grids, and titles that overlap blocks!<br>I got bonus points awarded for the embedded GoogleMaps information on the contact page! <br>You can navigate through the <a href="https://natcancode.github.io/flourshowerproject/flourshower3.html">project pages</a> clicking on the buttons and the About, Contact, Unavoidable, Amazing links on the header and footer.</p>
             </article>
-            <img class="eshoppic" src="../images/eshop-terra.png" alt="eshop-women-clothes-homepage-cream-black-oldpink">
-            <article class="eshoptext flex">
-                <h5>Terra E-shop</h5>
-                <p><a href="https://natcancode.github.io/EcommerceTerra/">E-shop website</a> project built at Simplon. Special focus made on UX/UI design from the landing page to the basket and payment pages. <br>Mobile first approach, JavaScript title animation, and carousel.</p>
+            <img class="eshoppic" data-scroll data-scroll-speed="1" src="../images/eshop-terra.png" alt="eshop-women-clothes-homepage-cream-black-oldpink">
+            <article class="eshoptext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>Terra E-shop</h3>
+                <p data-scroll><a href="https://natcancode.github.io/EcommerceTerra/">E-shop website</a> project built at Simplon. Special focus made on UX/UI design from the landing page to the basket and payment pages. <br>Mobile first approach, JavaScript title animation, and carousel.</p>
             </article>
-            <img class="imagegallerypic" src="../images/image-gallery-animation.png" alt="image-gallery-page-pink-flower-black-background-pink-caption">
-            <article class="imagegallerytext flex">
-                <h5>Image gallery animation</h5>
-                <p>Personal project on <a href="https://natcancode.github.io/image-gallery-animation/">image gallery animation</a> with JavaScript. Fluid image pop-up with a preview caption. The images are clickable - they expand when clicked and the caption is displayed.</p>
+            <img class="imagegallerypic" data-scroll data-scroll-speed="1" src="../images/image-gallery-animation.png" alt="image-gallery-page-pink-flower-black-background-pink-caption">
+            <article class="imagegallerytext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>Image gallery animation</h3>
+                <p data-scroll>Personal project on <a href="https://natcancode.github.io/image-gallery-animation/">image gallery animation</a> with JavaScript. Fluid image pop-up with a preview caption. The images are clickable - they expand when clicked and the caption is displayed.</p>
             </article>
-            <img class="jsanimationspic" src="../images/letter-animations.png" alt="cream-camera-addict-title-camera-picture-black-background">
-            <article class="jsanimationstext flex">
-                <h5>Letter animations</h5>
-                <p>Personal project on <a href="https://natcancode.github.io/loading-letter-animation/">letter animations</a> with JavaScript using JS libraries - Anime and ScrollReveal - and creation of a letter loader effect in case of poor network.</p>
+            <img class="jsanimationspic" data-scroll data-scroll-speed="1" src="../images/letter-animations.png" alt="cream-camera-addict-title-camera-picture-black-background">
+            <article class="jsanimationstext flex" data-scroll data-scroll-speed="1">
+                <h3 data-scroll>Letter animations</h3>
+                <p data-scroll>Personal project on <a href="https://natcancode.github.io/loading-letter-animation/">letter animations</a> with JavaScript using JS libraries - Anime and ScrollReveal - and creation of a letter loader effect in case of poor network.</p>
             </article>
             <!-- <img class="uidesignpic" src="../images/UI-design.png" alt="">
             <article class="uidesigntext flex">
@@ -255,7 +248,7 @@
                 <p>Very first project on Figma. The goal was to rethink the design of a website full of UI mistakes. <br>I had a blast discovering this new tool!</p>
             </article> -->
 
-            <a href="#projects"><p class="up flex">Up</p></a>
+            <a href="#projects"><p class="up flex" data-scroll>Up</p></a>
         </section>
 
         <!-- PHOTOGRAPHY GALLERY -->
@@ -264,21 +257,21 @@
         </section>    -->
 
         <!-- STYLE GUIDE -->
-        <section id="style">
-            <h3 class="styletitle flex">Style Guide</h3>
-            <h6 class="styleNP flex">NP</h6>
-            <h5 class="cormorant flex">Cormorant light</h5>
-            <h4 class="montserrat flex">Montserrat regular</h4>
-            <h5 class="stylecream flex">#FFFFF4</h5>
-            <h5 class="stylecreamdarker flex">#F8F8EA</h5>
-            <h5 class="stylecountdownlight flex">#DDC2AE</h5>
-            <h5 class="stylecountdown flex">#CDA382</h5>
-            <h5 class="styledarkbackground flex">#322F3D</h5>
+        <section id="style" data-scroll-section>
+            <h2 class="styletitle flex" data-scroll data-scroll-speed="1">Style Guide</h2>
+            <h6 class="styleNP flex" data-scroll data-scroll-speed="2">NP</h6>
+            <h5 class="cormorant flex" data-scroll>Cormorant light</h5>
+            <h4 class="montserrat flex" data-scroll>Montserrat regular</h4>
+            <h5 class="stylecream flex" data-scroll>#FFFFF4</h5>
+            <h5 class="stylecreamdarker flex" data-scroll>#F8F8EA</h5>
+            <h5 class="stylecountdownlight flex" data-scroll>#DDC2AE</h5>
+            <h5 class="stylecountdown flex" data-scroll>#CDA382</h5>
+            <h5 class="styledarkbackground flex" data-scroll>#322F3D</h5>
         </section>
 
         <!-- COUNTDOWN -->
-        <section id="countdown">
-            <h3  class="countdowntext grow-small">My Tech Manager <br>training at <a href="https://matrice.io/ecole/tech-front" class="grow-small">Matrice</a><br>ends soon!</h3>
+        <section id="countdown" data-scroll-section>
+            <h3 data-scroll data-scroll-speed="1" class="countdowntext grow-smaller">My Tech Manager <br>training at <a href="https://matrice.io/ecole/tech-front" class="grow-small">Matrice</a><br>ends soon!</h3>
             <div class="countdown flex"
                 data-countdown="2022-02-25T00:00:00+02:00"
                 data-countdown-option-leadingzero="true"
@@ -306,10 +299,10 @@
     </main>
 
     <!-- FOOTER -->
-    <footer id="footer">
-        <div class="footertitle flex">
-            <h3>Let's create something beautiful!</h3>
-            <a href="mailto:nathalie.piat1@gmail.com"><h3 class="touch">Get in touch.</h3></a>    
+    <footer id="footer" data-scroll-section>
+        <div class="footertitle flex" data-scroll>
+            <h3 data-scroll data-scroll-speed="1">Let's create something beautiful!</h3>
+            <a href="mailto:nathalie.piat1@gmail.com"><h3 data-scroll data-scroll-speed="1" class="touch">Get in touch.</h3></a>    
         </div>
         <a href="#header"><img class="logo rotation" src="../images/pinwheelFFFFF4.svg" alt="white-pinwheel-vector-logo"></a>
         <p class="copyright flex">© Nathalie Piat, 2021. Made with ♡</p>
@@ -324,6 +317,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

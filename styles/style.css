@@ -7,10 +7,6 @@
     --countdownlight: #DDC2AE;
     --darkbackground: #322F3D;
     --darkbackgrounddarker: #29282E;
-    /* --kaki: #999b84; */
-    /* --oldpink: #efd9d1;
-    --darknav: #7B637E;
-    --darkprojects: #3E2C41; */
     --switch-color: var(--black);
     --ball-color: var(--cream);
     --toggle-translate: 0;
@@ -20,13 +16,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .dark *{
-    background-color: var(--darkbackground);
-    color: var(--cream);
-    --switch-color: var(--cream);
-    --ball-color: var(--black);
-    --toggle-translate: 2.5rem;
-} */
 html{
     scroll-behavior: smooth;
 }
@@ -54,7 +43,7 @@ img{
     /* garder ratio d'une image  */
     object-fit: cover;
     display: block;
-    max-width: 100%;  /* si elle n'a plus la place, elle va se reduire */
+    max-width: 100%; /* si elle n'a plus la place, elle va se reduire */
 }
 div{
     height: auto;
@@ -67,7 +56,6 @@ button{
     padding: 1% 3% 1% 3%;
     /* padding: top right bottom left*/
     transition: background-color .5s;
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     color: var(--cream);
     font-size: clamp(13px, 10vw, 20px);
@@ -109,22 +97,22 @@ p{
     font-size: clamp(13px, 10vw, 20px);
 }
 h1, h2, h3, h5, h6{
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-weight: 400;
     text-transform: uppercase;
 }
 h1{
-    font-size: clamp(32px, 7vw, 60px);
+    font-size: clamp(36px, 7vw, 75px);
     /* transition: transform 330ms ease-in-out; */
 }
 /* h1:hover {
     transform: translate(5vh);
 } */
 h2{
-    font-size: clamp(30px, 7vw, 42px);
+    font-size: clamp(32px, 7vw, 60px);
 }
 h3{
-    font-size: clamp(28px, 7vw, 36px);
+    font-size: clamp(28px, 7vw, 40px);
 }
 h4{
     font-family: 'Montserrat', sans-serif;
@@ -156,7 +144,6 @@ li{
 .cursor{
     z-index: 999;
     position: fixed;
-    /* background: #2696E8; */
     background: var(--countdown);
     width: 20px;
     height: 20px;
@@ -306,7 +293,7 @@ nav a:hover{
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 12vh;
+    margin-top: 8vh;
     margin-bottom: 5vh;
 }
 /* .fluid{
@@ -388,7 +375,7 @@ nav a:hover{
 .grow{
     flex-grow: 1;
     transition: all 300ms ease-in-out;
-    font-size: clamp(32px, 7vw, 60px);
+    font-size: clamp(36px, 7vw, 75px);
 }
 .grow:hover{
     flex-grow: 2;
@@ -404,7 +391,7 @@ nav a:hover{
 	height: 50vh;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 3%;
+    margin-bottom: -7%;
 }
 .item{
 	position: relative;
@@ -412,7 +399,7 @@ nav a:hover{
     height: 100%;
     line-height: 100%;
     font-size: clamp(100px, 30vw, 460px); 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-weight: 400;
     opacity: 10%;
 }
@@ -440,6 +427,8 @@ nav a:hover{
     grid-area: abouttitle;
     text-transform: uppercase;
     align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .work .letter{
     display: inline-block;
@@ -447,12 +436,12 @@ nav a:hover{
 .grow-small{
     flex-grow: 1;
     transition: all 300ms ease-in-out;
-    font-size: clamp(28px, 7vw, 36px);
+    font-size: clamp(32px, 7vw, 60px);
 }
 .grow-small:hover{
     flex-grow: 2.5;
     /* cursor: pointer; */
-    font-size: clamp(42px, 7vw, 54px);
+    font-size: clamp(40px, 7vw, 75px);
 }
 .cartoonpic img{
     border-radius: 5px;
@@ -478,7 +467,7 @@ nav a:hover{
     left: 60%;
     line-height: 100%;
     font-size: 1100px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-weight: 400;
     opacity: 10%;
 }
@@ -597,6 +586,7 @@ nav a:hover{
     justify-content: center;
     justify-self: center;
     width: 70%;
+    margin-bottom: 20%;
 }
 #hardskills{
     /* width: 100vw; */
@@ -909,7 +899,7 @@ nav a:hover{
     padding-bottom: 10%;
 }
 .up:hover{
-    color: #999b84 !important;
+    color: var(--countdown) !important;
 }
 .dark .up{
     color: var(--cream);
@@ -948,6 +938,7 @@ nav a:hover{
     align-items: flex-start;
     letter-spacing: -0.5em;
     margin-top: -50%;
+
 }
 .cormorant{
     grid-area: cormorant;
@@ -1029,6 +1020,16 @@ nav a:hover{
     "countdowntext"
     "countdonwdays";
 }
+.grow-smaller{
+    flex-grow: 1;
+    transition: all 300ms ease-in-out;
+    font-size: clamp(28px, 7vw, 40px);
+}
+.grow-smaller:hover{
+    flex-grow: 2.5;
+    /* cursor: pointer; */
+    font-size: clamp(32px, 7vw, 60px);
+}
 .countdowntext{
     grid-area: countdowntext;
     margin-top: 5%;
@@ -1040,14 +1041,13 @@ nav a:hover{
 #countdown a{
     flex-grow: 1;
     transition: all 300ms ease-in-out;
-    font-size: clamp(28px, 7vw, 36px);
-    color: #CDA382;
+    font-size: clamp(28px, 7vw, 40px);
+    color: var(--countdown);
 }
 #countdown a:hover{
     flex-grow: 2;
-    /* cursor: pointer; */
-    font-size: clamp(42px, 7vw, 54px);
-    color: #999b84;
+    font-size: clamp(40px, 7vw, 60px);
+    color: var(--cream);
 }
 .countdown{
     --colour-days: calc(var(--countdown-percent-days) * 255);
@@ -1074,7 +1074,7 @@ nav a:hover{
     align-items: center;
     position: relative;
     font-size: clamp(32px, 7vw, 42px);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     line-height: 1.2em;
 }
 .countdown .amount::after {
@@ -1210,7 +1210,6 @@ footer{
 /* MEDIA QUERIES */
 @media screen and (max-width: 375px){
     #landing{
-        margin-top: 13vh;
         margin-bottom: 7vh;
         padding-left: 7%;
         padding-right: 7%;
@@ -1222,8 +1221,7 @@ footer{
         margin-bottom: -50% !important;
     }
     .abouttitle{
-        margin-top: -30%;
-        margin-bottom: -50%;
+        margin-bottom: -10% !important;
     }
     .aboutme{
         margin-top: -10%;
@@ -1255,6 +1253,9 @@ footer{
 /* 414×896 => iPhone 6/7/8+ */
 @media screen and (max-width: 415px){
 	/*  HEADER */
+    #landing{
+        margin-top: 15vh;
+    }
     #landing p{
         line-height: 1.5;
     }
@@ -1621,7 +1622,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        /* border: orange 2px solid; */
         margin-top: 0%;
         padding-bottom: 5%;
     }
@@ -1629,7 +1629,7 @@ footer{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-	padding-left: 3%;
+        padding-left: 3%;
     }
     .montserrat{
         flex-direction: column;

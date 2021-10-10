@@ -1,3 +1,9 @@
+const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+})
+
+
 // scroll reveal
 // ScrollReveal().reveal('.nav-links')
 const sr = ScrollReveal({
@@ -45,11 +51,11 @@ darkMode.addEventListener('change' , () => {
 // greetings according to time of day
 function greetings() {
     if (new Date().getHours() >= 2 && new Date().getHours() < 12) {
-        greets = "Hey, good morning!<br>I'm Nathalie."
+        greets = "Hey, good morning! I'm Nathalie."
     } else if (new Date().getHours() >= 12 && new Date().getHours() < 18) {
-        greets = "Hey, good afternoon!<br>I'm Nathalie."
+        greets = "Hey, good afternoon! I'm Nathalie."
     } else {
-        greets = "Hey, good evening!<br>I'm Nathalie."
+        greets = "Hey, good evening! I'm Nathalie."
     }
     // careful with security issues using innerHTML (user input only?)
     document.getElementById("greetings").innerHTML = greets
