@@ -532,9 +532,15 @@ nav a:hover{
     grid-area: skill3;
     background: #E7E6DC;
 }
+.dark .skill3{
+    background: var(--darkbackgrounddarker);
+}
 .skill4{
     grid-area: skill4;
     background: var(--creamdarker);
+}
+.dark .skill4{
+    background: var(--black);
 }
 .soft{
     justify-content: center;
